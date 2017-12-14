@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!--LINK DE METAS -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Foodmap</title>
+
+		<!--LINK DE CSS-->
+	<link rel="stylesheet" href="../Foodmap/assets/css/style.css">
+	<!--LINK DE BOOSTRAP-->
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!--LINK DE FUENTES-->
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<!--SCRIPT DE ICONOS-->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
+		<!--SCRIPT DE JQUERY Y MI ARCHIVO JS-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="../Foodmap/assets/js/app.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<!--MODALES-->
+		<div class="modal1" style="display: none">
+			<div class="modal-content">
+				<h5>Papa Johns</h5>
+				<p>Mejores Ingredientes. Mejor Pizza</p>
+				<p>$12990</p>
+			</div>
+			<div class="modal-footer"> 
+				<button type="button" class="btn btn-primary">Cerrar</button>
+			</div>
+		</div>
+
+		<div class="modal2" style="display: none">
+			<div class="modal-content">
+				<h5>Pizza Pizza</h5>
+				<p>La mejor Pizza</p>
+				<p>$12990</p>
+			</div>
+			<div class="modal-footer"> 
+				<button type="button" class="btn btn-primary">Cerrar</button>
+			</div>
+		</div>
+
+		<div class="modal3" style="display: none">
+			<div class="modal-content">
+				<h5>Dominos Pizza</h5>
+				<p>La mejor Pizza</p>
+				<p>$12990</p>
+			</div>
+			<div class="modal-footer"> 
+				<button type="button" class="btn btn-primary">Cerrar</button>
+			</div>
+		</div>
+
+		<div class="modal4" style="display: none">
+			<div class="modal-content">
+				<h5>Fuente Alemana</h5>
+				<p>Lo mejor de Santiago</p>
+				<p>$6990</p>
+			</div>
+			<div class="modal-footer"> 
+				<button type="button" class="btn btn-primary">Cerrar</button>
+			</div>
+		</div>
+
+		<div class="modal5" style="display: none">
+			<div class="modal-content">
+				<h5>Panzon</h5>
+				<p>El mas grande de Santiago</p>
+				<p>$6990</p>
+			</div>
+			<div class="modal-footer"> 
+				<button type="button" class="btn btn-primary">Cerrar</button>
+			</div>
+		</div>
+
+		<div class="modal6" style="display: none">
+			<div class="modal-content">
+				<h5>La terraza</h5>
+				<p>La mejor de plaza italia</p>
+				<p>$6990</p>
+			</div>
+			<div class="modal-footer"> 
+				<button type="button" class="btn btn-primary">Cerrar</button>
+			</div>
+		</div>
+
+		<div class="modal7" style="display: none">
+			<div class="modal-content">
+				<h5>Macdonals/h5>
+				<p>Me encanta todo eso</p>
+				<p>$4990</p>
+			</div>
+			<div class="modal-footer"> 
+				<button type="button" class="btn btn-primary">Cerrar</button>
+			</div>
+		</div>
+
+		<div class="modal8" style="display: none">
+			<div class="modal-content">
+				<h5>Burger King</h5>
+				<p>Come mas paga menos</p>
+				<p>$5990</p>
+			</div>
+			<div class="modal-footer"> 
+				<button type="button" class="btn btn-primary">Cerrar</button>
+			</div>
+		</div>
+
+		<div class="modal9" style="display: none">
+			<div class="modal-content">
+				<h5>Mr Jack</h5>
+				<p>Las mejores hamburguezas</p>
+				<p>$6990</p>
+			</div>
+			<div class="modal-footer"> 
+				<button type="button" class="btn btn-primary">Cerrar</button>
+			</div>
+		</div>
+
+
+	<!--CONTENEDOR PRINCIPAL-->
+
+	<div class="container-fluid" id="general">
+
+	<!-- PRIMER CONTENIDO QUE SE MOSTRARA EN LA PANTALLA-->
+
+		<div class="contentido1">
+			<h1 class="text-center">Foodmap</h1>
+		</div>
+
+	<!--SEGUNDO CONTENIDO A MOSTRAR EN LA PANTALLA-->
+
+		<div class="contentido2" style="display:none">
+			<div class="row" id="titulo">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<h2 class="text-center">Foodmap</h2>
+					<hr>
+				</div>
+			</div>
+
+	<!--MAPA INSERTADO EN LA PAGINA-->
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.328623000537!2d-70.63490688518345!3d-33.44074388077686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c582da438205%3A0x1959e4cc080555a4!2sRam%C3%B3n+Carnicer+81%2C+Providencia%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1513133529354" width="100%" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+
+<!--TITULO 3, Y BARRA DE FILTRO-->
+		<div class="row" id="filtro">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h3 class="text-center">Comida cerca de ti</h3>
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Elige tu comida favorita
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						<li class="churr"><a href="#">Churrascos</a></li>
+						<li class="hamb"><a href="#">Hamburguezas</a></li>
+						<li class="pizza"><a href="#">Pizzas</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<!--SECCION DONDE VAN A IR TODAS LAS IMAGENES A MOSTRAR-->
+		<section class="fotos">
+			<div class="container">
+				<div class="row">
+					<div class="opciones">
+						<div class="col-xs-4" id="churrascos">
+							<img src="assets/img/churrascos.jpg" alt="">
+						</div>
+						<div class="col-xs-4" id="hamburgueza">
+							<img src="assets/img/hamburgueza.jpg" alt="" >
+						</div>
+						<div class="col-xs-4" id="pizza">
+							<img src="assets/img/pizza.jpg" alt="" >
+						</div>
+					</div>
+				</div>
+
+				<!--Pizzas-->
+				<div class="pizzas">
+					<div class="col-xs-4">
+						<img src="assets/img/papa_johns.jpg" alt="" data-toggle="modal1">
+					</div>
+					<div class="col-xs-4">
+						<img src="assets/img/pizzapizza.jpg" alt="" data-toggle="modal2">
+					</div>
+					<div class="col-xs-4">
+						<img src="assets/img/dominos.jpeg" alt="" data-toggle="modal3">
+					</div>
+				</div>
+				<div class="churrascos">
+					<div class="col-xs-4" id="fuente">
+						<img src="assets/img/fuente.jpg" alt="" data-toggle="modal4">
+					</div>
+					<div class="col-xs-4" id="panzon">
+						<img src="assets/img/panzon.png" alt="" data-toggle="modal5">
+					</div>
+					<div class="col-xs-4" id="terraza">
+						<img src="assets/img/terraza.jpg" alt="" data-toggle="modal6">
+					</div>
+				</div>
+				<div class="hamburgueza">
+					<div class="col-xs-4">
+						<img src="assets/img/mc.png" alt="" data-toggle="modal7">
+					</div>
+					<div class="col-xs-4">
+						<img src="assets/img/burger.png" alt="" data-toggle="modal8">
+					</div>
+					<div class="col-xs-4">
+						<img src="assets/img/mr.png" alt="" data-toggle="modal9">
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+		
+
+
+
+			</div>
+
+		</div>
+
+		
+		
+
+	
+</body>
+</html>
